@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WireMock" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/wiremock/wiremock-jre8-standalone-2.31.0.jar" />
+    <option name="PROGRAM_PARAMETERS" value="--port 8082 --no-request-journal --verbose" />
+    <option name="WORKING_DIRECTORY" value="$ProjectFileDir$\wiremock" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2" />
+  </configuration>
+</component>

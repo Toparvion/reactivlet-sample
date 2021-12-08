@@ -1,0 +1,7 @@
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-webflux'
+  implementation project(':shared')
+
+  implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:3.0.5'
+  implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer:3.0.4'
+}

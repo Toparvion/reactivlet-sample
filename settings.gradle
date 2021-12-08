@@ -1,0 +1,4 @@
+rootProject.name = 'reactivlet-sample'
+include 'webmvc'
+include 'webflux'
+include 'shared'

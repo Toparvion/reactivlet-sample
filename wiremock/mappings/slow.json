@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/slow"
+    },
+    "response": {
+        "status": 200,
+		"fixedDelayMilliseconds": 2000,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "responder": "wiremock",
+		  "mode": "SLOW"
+        }
+    }
+}

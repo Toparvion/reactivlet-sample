@@ -1,0 +1,39 @@
+plugins {
+  id 'org.springframework.boot' version '2.5.6'
+  id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+  id 'java'
+}
+subprojects {
+
+  apply plugin: 'java'
+  apply plugin: 'io.spring.dependency-management'
+  apply plugin: 'org.springframework.boot'
+
+  group = 'pro.toparvion.sample.reactivlet'
+  version = '0.0.1-SNAPSHOT'
+  sourceCompatibility = '17'
+
+  configurations {
+    compileOnly {
+      extendsFrom annotationProcessor
+    }
+  }
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+  }
+}
+
+task wiremock(type: JavaExec) {
+  description('Launch WireMock standalone as a proxy target for the web apps')
+  classpath = files("${projectDir}/wiremock/wiremock-jre8-standalone-2.31.0.jar")
+  workingDir("${projectDir}/wiremock/")
+  args '--port', '8082', '--no-request-journal', '--verbose'
+}

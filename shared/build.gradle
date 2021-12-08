@@ -1,0 +1,6 @@
+dependencies {
+  implementation 'org.springframework:spring-aspects'
+  implementation 'org.springframework:spring-web'
+  implementation 'io.projectreactor:reactor-core'
+  implementation 'javax.servlet:javax.servlet-api'
+}

@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WebMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="reactivlet-sample.webmvc.main" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="pro.toparvion.sample.gateway.gatewaydemo.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="pro.toparvion.sample.reactivlet.WebMvcApplication" />
+    <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

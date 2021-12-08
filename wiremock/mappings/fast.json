@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/fast"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "responder": "wiremock",
+		  "mode": "FAST"
+        }
+    }
+}
