@@ -10,7 +10,7 @@ subprojects {
   apply plugin: 'org.springframework.boot'
 
   group = 'pro.toparvion.sample.reactivlet'
-  version = '0.0.1-SNAPSHOT'
+  version = '0.0.1'
   sourceCompatibility = '17'
 
   configurations {
@@ -33,6 +33,7 @@ subprojects {
 
 task wiremock(type: JavaExec) {
   description('Launch WireMock standalone as a proxy target for the web apps')
+  group 'application'
   classpath = files("${projectDir}/wiremock/wiremock-jre8-standalone-2.31.0.jar")
   workingDir("${projectDir}/wiremock/")
   args '--port', '8082', '--no-request-journal', '--verbose'
